@@ -29,6 +29,9 @@ const SlideText = styled.p`
   font-size: 30px;
   color: #fafafa;
   margin-bottom: 32px;
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
 `;
 
 const Button = styled.button`

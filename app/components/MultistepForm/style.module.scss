@@ -6,13 +6,18 @@
   p {
     color: white;
     font-size: 30px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
   }
 
   .wrapperInput {
     position: relative;
     margin-top: 200px;
     @media (max-width: 768px) {
-      margin-top: 350px;
+      margin-top: 250px;
     }
     input {
       position: relative;
