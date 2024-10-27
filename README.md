@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dharma Wiguna - Juice Box
 
-## Getting Started
+Next Js Projext web application based on the provided Figma design
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+1. **Homepage**:
+
+   - A visually appealing homepage featuring a Lottie animation.
+
+2. **Walkthrough Tutorial**:
+
+   - Screens that guide users through the application using Swiper for a smooth sliding experience.
+
+3. **Multistep Form**:
+
+   - A multistep form with various input fields that allows users to enter their information step by step.
+
+4. **Results Page**:
+   - A results page that displays user input along with a Lottie animation for a dynamic touch.
+
+## Technology Stack
+
+- **Framework**: Next.js
+- **Styling**: CSS Variables (Sass), Tailwind CSS
+
+### Getting Started
+
+## Clone Repository
+
+```sh
+$ git clone [repository-url]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Navigate to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+$ cd [project-directory]
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Install Dependencies
 
-## Learn More
+```sh
+$ npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Run project
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+$ npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open your browser and go to http://localhost:3000
