@@ -1,12 +1,15 @@
 "use client";
 import animationData from "@/public/JB2G_Lottie.json";
+import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
+import Image from "next/image";
+import Link from "next/link";
 import { Provider } from "react-redux";
 import MultiStepForm from "../components/MultistepForm";
+import Reload from "../components/Reload";
 import { store } from "../store/store";
 import styles from "./style.module.scss";
-import { ArrowLeftIcon, ArrowPathIcon } from "@heroicons/react/24/solid";
 
 export default function Form() {
   return (
@@ -18,11 +21,16 @@ export default function Form() {
               <ArrowLeftIcon className="w-6 h-6" />
             </div>
 
-            <h1 className="text-3xl font-bold">juicebox</h1>
-
-            <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-700 cursor-pointer">
-              <ArrowPathIcon className="w-6 h-6" />
-            </div>
+            <Link href="/">
+              <Image
+                src="/images/juicebox-logo.png"
+                width={120}
+                height={120}
+                alt="background"
+                className={styles.images}
+              />
+            </Link>
+            <Reload />
           </div>
           <motion.div
             initial="initial"

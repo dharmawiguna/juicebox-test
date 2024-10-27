@@ -1,6 +1,5 @@
 "use client";
 import RoundedButton from "@/app/common/RoundedButton";
-import { ArrowPathIcon } from "@heroicons/react/24/solid";
 import { motion, useScroll, useTransform } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -8,6 +7,8 @@ import Image from "next/image";
 import { useLayoutEffect, useRef } from "react";
 import { slideUp } from "./animation";
 import styles from "./style.module.scss";
+import Link from "next/link";
+import Reload from "../Reload";
 
 export default function Hero() {
   const slider = useRef(null);
@@ -54,11 +55,17 @@ export default function Hero() {
         <div className="flex items-center justify-between p-4 bg-[#0c0d10] text-white">
           <div></div>
 
-          <h1 className="text-3xl font-bold">juicebox</h1>
+          <Link href="/">
+            <Image
+              src="/images/juicebox-logo.png"
+              width={120}
+              height={120}
+              alt="background"
+              className={styles.images}
+            />
+          </Link>
 
-          <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-700 cursor-pointer">
-            <ArrowPathIcon className="w-6 h-6" />
-          </div>
+          <Reload />
         </div>
         <motion.div
           variants={slideUp}
