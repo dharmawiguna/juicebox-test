@@ -7,7 +7,7 @@ import { useLayoutEffect, useRef } from "react";
 import { slideUp } from "./animation";
 import styles from "./style.module.scss";
 import Slider from "../components/Slider";
-import { ArrowLeftIcon, ArrowPathIcon } from "@heroicons/react/24/solid";
+import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import Reload from "../components/Reload";
 
