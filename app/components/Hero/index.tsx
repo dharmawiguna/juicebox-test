@@ -72,6 +72,7 @@ export default function Hero() {
               width={350}
               height={350}
               alt="background"
+              className={styles.images}
             />
           </div>
           <div data-scroll data-scroll-speed={0.1} className={styles.desc1}>
