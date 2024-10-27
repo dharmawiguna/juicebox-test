@@ -62,7 +62,7 @@ export default function GetStarted() {
         >
           <div className={styles.imageWrapper}>
             <Image
-              src="/images/vector.png"
+              src="/images/Vector.png"
               width={150}
               height={150}
               alt="background"

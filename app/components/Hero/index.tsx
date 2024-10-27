@@ -68,7 +68,7 @@ export default function Hero() {
         >
           <div className={styles.imageWrapper}>
             <Image
-              src="/images/vector.png"
+              src="/images/Vector.png"
               width={350}
               height={350}
               alt="background"
